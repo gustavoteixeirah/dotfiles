@@ -21,6 +21,11 @@ Plug 'folke/tokyonight.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.5' }
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
 
 " This was from the colorscheme section: 
@@ -43,3 +48,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+nnoremap <leader>pw <cmd>!pwd<CR>
+nnoremap <leader>rr <cmd>!cargo run<CR>
+nnoremap <leader>rg <cmd>!go run<CR>
