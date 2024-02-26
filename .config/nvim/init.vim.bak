@@ -51,4 +51,4 @@ nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 nnoremap <leader>pw <cmd>!pwd<CR>
 nnoremap <leader>rr <cmd>!cargo run<CR>
-nnoremap <leader>rg <cmd>!go run<CR>
+nnoremap <leader>rg <cmd>!go run .<CR>
