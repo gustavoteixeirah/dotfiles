@@ -193,5 +193,3 @@ bar {
 
 bindsym $mod+y resize set 1200 px 800 px, move position center
 
-# start a terminal
-bindsym $mod+Shift+Return exec i3-sensible-terminal
