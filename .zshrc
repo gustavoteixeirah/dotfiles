@@ -4,6 +4,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
+export TERM='xterm-256color'
 
 ZSH_THEME="fire"
 
