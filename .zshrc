@@ -2,6 +2,8 @@ export GPG_TTY=$(tty)
 export ZSH="/home/teixeira/.oh-my-zsh"
 export EDITOR=nvim
 export VISUAL=nvim
+export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
+export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 
 ZSH_THEME="fire"
 
