@@ -22,6 +22,7 @@ alias gc="git commit"
 alias gp="git push"
 alias spot="mvn spotless:apply"
 alias nt="st &"
+alias ls="lsd"
 
 source $ZSH/oh-my-zsh.sh
 eval "$(zoxide init --cmd cd zsh)"
