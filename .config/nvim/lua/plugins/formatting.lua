@@ -9,7 +9,7 @@ return {
 				lua = { "stylua" },
 				rust = { "rustfmt" },
 				go = { "gofmt", "goimports" },
-				templ = { "templ" },
+				templ = { "prettier" },
 				java = { "google-java-format" },
 				python = { "ruff_format" },
 				css = { "prettier" },
