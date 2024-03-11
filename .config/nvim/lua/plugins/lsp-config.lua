@@ -22,12 +22,10 @@ return {
 					"docker_compose_language_service",
 					"gopls",
 					"gradle_ls",
-					"htmx",
 					"jsonls",
 					"jdtls",
 					"ruff_lsp",
 					"sqlls",
-					"templ",
 				},
 			})
 		end,
@@ -54,7 +52,6 @@ return {
 				},
 			})
 			lspconfig.templ.setup({ capabilities = capabilities })
-			lspconfig.htmx.setup({ capabilities = capabilities })
 			lspconfig.ruff_lsp.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
