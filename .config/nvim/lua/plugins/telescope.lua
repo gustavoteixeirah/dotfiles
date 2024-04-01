@@ -23,7 +23,7 @@ return {
 		config = function()
 			require("telescope").setup({
 				defaults = {
-					file_ignore_patterns = { "node_modules", ".git/" },
+					file_ignore_patterns = { "node_modules", ".git/", "%_templ.txt" },
 					vimgrep_arguments = {
 						"rg",
 						"--hidden",
