@@ -1,3 +1,0 @@
-require("teixeirah")
-
-print("hello")

@@ -5,6 +5,9 @@ export VISUAL=nvim
 export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok.jar"
 export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export TERM='xterm-256color'
+export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1
+export PATH="$HOME/.tmuxifier/bin:$PATH"
+eval "$(tmuxifier init -)"
 
 ZSH_THEME="fire"
 
@@ -38,3 +41,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)

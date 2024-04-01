@@ -17,16 +17,19 @@ return {
 				ensure_installed = {
 					"lua_ls",
 					"templ",
+					"jdtls",
 					"cssls",
 					"dockerls",
-					"docker_compose_language_service",
 					"gopls",
 					"gradle_ls",
 					"jsonls",
-					"jdtls",
 					"ruff_lsp",
 					"sqlls",
+					"yamlls",
+					"ansiblels",
 				},
+				auto_install = true,
+				automatic_installation = true,
 			})
 		end,
 	},
@@ -36,8 +39,8 @@ return {
 		config = function()
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
+
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
-			lspconfig.jdtls.setup({ capabilities = capabilities })
 			lspconfig.gopls.setup({
 				capabilities = capabilities,
 				settings = {
@@ -51,8 +54,16 @@ return {
 					},
 				},
 			})
+			lspconfig.htmx.setup({ capabilities = capabilities })
 			lspconfig.templ.setup({ capabilities = capabilities })
 			lspconfig.ruff_lsp.setup({ capabilities = capabilities })
+			lspconfig.cssls.setup({ capabilities = capabilities })
+			lspconfig.dockerls.setup({ capabilities = capabilities })
+			lspconfig.jsonls.setup({ capabilities = capabilities })
+			lspconfig.sqlls.setup({ capabilities = capabilities })
+			lspconfig.yamlls.setup({ capabilities = capabilities })
+			lspconfig.ansiblels.setup({ capabilities = capabilities })
+			lspconfig.jdtls.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
