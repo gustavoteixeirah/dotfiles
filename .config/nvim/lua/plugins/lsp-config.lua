@@ -23,6 +23,7 @@ return {
 					"gopls",
 					"gradle_ls",
 					"jsonls",
+					"rust_analyzer",
 					"ruff_lsp",
 					"sqlls",
 					"yamlls",
@@ -56,7 +57,18 @@ return {
 			})
 			lspconfig.htmx.setup({ capabilities = capabilities })
 			lspconfig.templ.setup({ capabilities = capabilities })
+
 			lspconfig.ruff_lsp.setup({ capabilities = capabilities })
+			lspconfig.rust_analyzer.setup({
+				capabilities = capabilities,
+				cmd = {
+					"rustup",
+					"run",
+					"stable",
+					"rust-analyzer",
+				},
+			})
+
 			lspconfig.cssls.setup({ capabilities = capabilities })
 			lspconfig.dockerls.setup({ capabilities = capabilities })
 			lspconfig.jsonls.setup({ capabilities = capabilities })
