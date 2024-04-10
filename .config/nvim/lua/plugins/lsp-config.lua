@@ -55,7 +55,7 @@ return {
 					},
 				},
 			})
-			lspconfig.htmx.setup({ capabilities = capabilities })
+			-- lspconfig.htmx.setup({ capabilities = capabilities })
 			lspconfig.templ.setup({ capabilities = capabilities })
 
 			lspconfig.ruff_lsp.setup({ capabilities = capabilities })
@@ -75,7 +75,7 @@ return {
 			lspconfig.sqlls.setup({ capabilities = capabilities })
 			lspconfig.yamlls.setup({ capabilities = capabilities })
 			lspconfig.ansiblels.setup({ capabilities = capabilities })
-			lspconfig.jdtls.setup({ capabilities = capabilities })
+			-- lspconfig.jdtls.setup({ capabilities = capabilities })
 
 			vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
