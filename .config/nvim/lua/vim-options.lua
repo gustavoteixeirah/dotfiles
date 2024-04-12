@@ -1,4 +1,3 @@
-vim.cmd("set scrolloff=32")
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 vim.cmd("set tabstop=4 softtabstop=4")
