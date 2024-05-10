@@ -458,16 +458,29 @@ require("lazy").setup({
 			--        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
 			local servers = {
 				-- clangd = {},
-				-- gopls = {},
+				gopls = {},
 				-- pyright = {},
-				-- rust_analyzer = {},
+				rust_analyzer = {},
+				-- python
+				ruff_lsp = {},
+				ansiblels = {},
+				terraformls = {},
+				bashls = {},
+				html = {},
+				htmx = {},
+				cssls = {},
+				tailwindcss = {},
+				jsonls = {},
+				dockerls = {},
+				docker_compose_language_service = {},
+				sqlls = {},
 				-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 				--
 				-- Some languages (like typescript) have entire language plugins that can be useful:
 				--    https://github.com/pmizio/typescript-tools.nvim
 				--
 				-- But for many setups, the LSP (`tsserver`) will work just fine
-				-- tsserver = {},
+				tsserver = {},
 				--
 
 				lua_ls = {
@@ -740,6 +753,8 @@ require("lazy").setup({
 				"bash",
 				"c",
 				"html",
+				"css",
+				"javascript",
 				"lua",
 				"luadoc",
 				"markdown",
