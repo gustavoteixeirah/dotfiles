@@ -463,8 +463,6 @@ require("lazy").setup({
 				rust_analyzer = {},
 				-- python
 				ruff_lsp = {},
-				ansiblels = {},
-				terraformls = {},
 				bashls = {},
 				html = {},
 				htmx = {},
